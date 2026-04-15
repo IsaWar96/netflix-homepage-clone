@@ -1,2 +1,2 @@
 # netflix-homepage-clone
-A responsive netflix homepage built with HTML and css
+An Identical responsive netflix homepage built with HTML and css

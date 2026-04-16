@@ -35,13 +35,13 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    height: 35px;
-    min-width: 148px;
+    min-width: 200;
 }
 
 .logo {
-    width: 148px;
-    height: 35px;
+    width: auto;
+    height: auto;
+    max-height: 105px;
     object-fit: contain;
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }

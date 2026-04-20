@@ -9,7 +9,7 @@ body {
     min-height: 100%;
     background-color: #111111;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
@@ -233,6 +233,7 @@ body {
 
 .rank {
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     bottom: 0;
     left: 0;
     transform: translate(-15%, 15%);
@@ -242,7 +243,72 @@ body {
     -webkit-text-stroke: 2px white;
 }
 
+/* reasons to subscribe */
+
+.sub-reason {
+    padding: 60px 80px;
+    background: #000;
+    color: #fff;
+}
+
+.sub-reason h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background: linear-gradient(145deg, #1c1c3c, #2a0f2f);
+    padding: 25px;
+    border-radius: 20px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #b3b3b3;
+    line-height: 1.5;
+}
+
+.card img {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card img {
+        width: 40px;
+    }
     .hero-form {
         flex-direction: column;
     }
@@ -259,6 +325,5 @@ body {
         justify-content: flex-start;
     }
 }
-
 
 

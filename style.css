@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     width: 100%;
     min-height: 100%;
@@ -13,6 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 .topbar {
     display: flex;
     justify-content: center;
@@ -36,12 +36,9 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    min-width: 200;
 }
 
 .logo {
-    width: auto;
-    height: auto;
     max-height: 105px;
     object-fit: contain;
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
@@ -68,6 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     min-width: 120px;
+    max-width: 100%;
     padding: 10px 24px;
     border: none;
     border-radius: 6px;
@@ -89,8 +87,8 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    min-height: 100vh; /* fix mobil */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,8 +97,6 @@ body {
 
 .hero img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -109,8 +105,6 @@ body {
 
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
@@ -123,7 +117,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     width: 100%;
     max-width: 700px;
@@ -131,34 +124,24 @@ body {
     gap: 20px;
 }
 
-
 .hero-title {
     font-size: clamp(36px, 7vw, 72px);
     font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 10px;
 }
 
 .hero-subtitle {
     font-size: clamp(18px, 2.5vw, 28px);
-    font-weight: 400;
-    margin-bottom: 10px;
 }
 
 .hero-description {
     font-size: clamp(14px, 1.5vw, 18px);
-    font-weight: 400;
-    margin-bottom: 20px;
     opacity: 0.9;
 }
 
 .hero-form {
     display: flex;
-    flex-direction: row;
     gap: 12px;
     width: 100%;
-    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -167,13 +150,21 @@ body {
     flex: 1;
     min-width: 250px;
     padding: 14px 20px;
-    border: none;
     border-radius: 4px;
     background-color: rgba(20, 20, 20, 0.8);
     color: #ffffff;
-    font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-button {
+    min-width: 160px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .email-input::placeholder {
@@ -184,20 +175,6 @@ body {
     outline: none;
     background-color: rgba(20, 20, 20, 0.95);
     border-color: rgba(255, 255, 255, 0.6);
-}
-
-.cta-button {
-    min-width: 160px;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    background-color: #e50914;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    letter-spacing: 0.02em;
 }
 
 .cta-button:hover {

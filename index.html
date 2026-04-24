@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Netflix Sverige – Titta på serier online, titta på filmer online</title>
 </head>
@@ -16,11 +17,13 @@
                 <img class="logo" src="images/netflix-logo.png" alt="Netflix">
             </section>
             <section class="button-container">
-                <select class="language-select" aria-label="Välj språk">
-                    <option>Svenska</option>
-                    <option>Engelska</option>
-                    
-                </select>
+                <label class="header-lang-select">
+                    <i class="fa-solid fa-globe"></i>
+                    <select class="language-select" aria-label="Välj språk">
+                        <option>Svenska</option>
+                        <option>Engelska</option>
+                    </select>
+                </label>
                 <button class="login-btn">Logga in</button>
             </section>
         </section>
@@ -38,7 +41,7 @@
                 
                 <form class="hero-form">
                     <input type="email" class="email-input" placeholder="E-postadress" required>
-                    <button type="submit" class="cta-button">Kom igång</button>
+                    <button type="submit" class="cta-button">Kom igång <i class="fa-solid fa-chevron-right"></i></button>
                 </form>
             </section>
         </section>
@@ -120,42 +123,42 @@
                     <li>
                         <button class="faq-question">
                             <span>Vad är Netflix?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
 
                     <li>
                         <button class="faq-question">
                             <span>Hur mycket kostar Netflix?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
 
                     <li>
                         <button class="faq-question">
                             <span>Var kan jag titta?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
 
                     <li>
                         <button class="faq-question">
                             <span>Hur gör jag för att avsluta?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
 
                     <li>
                         <button class="faq-question">
                             <span>Vad kan jag se på Netflix?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
 
                     <li>
                         <button class="faq-question">
                             <span>Passar Netflix för barn?</span>
-                            <span class="icon">+</span>
+                            <i class="fa-solid fa-plus icon"></i>
                         </button>
                     </li>
                 </ul>
@@ -172,7 +175,7 @@
                 <form class="cta-form">
                     <input type="email" placeholder="E-postadress" required>
                     <button type="submit">
-                        Kom igång <span>›</span>
+                        Kom igång <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </form>
             </div>
@@ -182,7 +185,7 @@
             <div class="footer-container">
 
                 <p class="footer-contact">
-                    Frågor? Ring <a href="#">020-012 3300</a>
+                    Frågor? Ring <a href="#"> 020-012 3300</a>
                 </p>
 
                 <div class="footer-links">
@@ -220,7 +223,7 @@
 
                 <div class="footer-bottom">
                     <label class="footer-lang-select">
-                        <span class="footer-lang-icon">&#x1F30D;</span>
+                        <i class="fa-solid fa-globe footer-lang-icon"></i>
                         <select>
                             <option>Svenska</option>
                             <option>English</option>

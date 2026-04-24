@@ -50,14 +50,32 @@ body {
     gap: 12px;
 }
 
-.language-select {
-    height: 32px;
+.header-lang-select {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 4px;
     background: rgba(20, 20, 20, 0.68);
     color: #ffffff;
-    padding: 0 14px;
+    padding: 0 10px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.header-lang-select i {
+    font-size: 14px;
+    color: #fff;
+}
+
+.language-select {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
 }
 
 .login-btn {
